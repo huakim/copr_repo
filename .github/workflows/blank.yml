@@ -23,4 +23,4 @@ jobs:
         with:
           python-version: '3.13' 
           cache: 'pip' 
-      - run: bash -x main.sh
+      - run: env TOKEN=${{ secrets.TOKEN }} LOGIN=${{ secrets.LOGIN }} bash -x main.sh
