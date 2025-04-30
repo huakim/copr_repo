@@ -1,4 +1,5 @@
 #!/bin/bash -x
+pip install copr
 cat << EOF > copr.conf
 [copr-cli]
 login = $LOGIN
